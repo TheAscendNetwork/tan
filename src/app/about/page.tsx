@@ -38,13 +38,13 @@ export default function About() {
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black">Executive Summary</h2>
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
                 <p>
-                  The Ascend Network (TAN) represents a paradigm shift in how African youth engage with development, innovation, and leadership across the continent. We are more than a network; we are a movement dedicated to creating sustainable change through collaboration, mentorship, and strategic action.
+                  The Network will serve as a leadership and empowerment hub for students committed to personal growth, academic excellence, community service, and purposeful collaboration. Beyond academic and leadership development, TAN aims to create a generational movement of students and youth who are prepared to make meaningful contributions to Africa&rsquo;s long-term growth and transformation.
                 </p>
                 <p>
-                  Our approach combines traditional African values of ubuntu and community with modern technology and global best practices to create solutions that are both locally relevant and internationally competitive.
+                  By fostering strategic partnerships across key industries such as real estate, natural resource extraction, finance, engineering, agro-processing, technology, health, education, manufacturing, logistics, tourism, and green energy, TAN will provide direct access for its members to engage with leaders and innovators shaping Africa&rsquo;s future.
                 </p>
                 <p>
-                  Since our inception, TAN has been committed to addressing the unique challenges facing African youth while capitalizing on the immense opportunities presented by our continent&apos;s dynamic growth trajectory.
+                  This platform will allow students not only to learn from these sectors but also to co-create sustainable solutions alongside industry professionals.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function About() {
                 <p className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-600">Transform. Aspire. Network.</p>
               </div>
               <p className="text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed max-w-xl sm:max-w-2xl lg:max-w-3xl mx-auto px-4 sm:px-0">
-                Our name reflects our core belief that every African has the potential to ascend to greater heights, transforming themselves, their communities, and the continent as a whole.
+                Our name reflects our core belief that every African youth has the potential to ascend to greater heights, transforming themselves, their communities, and the continent as a whole.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export default function About() {
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black">Vision</h3>
                   <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
-                    To create a thriving ecosystem where African youth are empowered to lead transformative change, driving sustainable development and prosperity across the continent through innovation, collaboration, and strategic partnerships.
+                    To empower the youth to rise beyond limitations and lead lives of meaning, influence, and legacy.
                   </p>
                 </div>
               </Card>
@@ -105,7 +105,7 @@ export default function About() {
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black">Mission</h3>
                   <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
-                    To empower African youth through comprehensive mentorship programs, strategic networking opportunities, and innovative capacity-building initiatives that foster leadership, entrepreneurship, and sustainable community development across Africa.
+                    To cultivate Africa&rsquo;s future leaders through intentional networking, academic excellence, professional development, and a united commitment to African growth and innovation.
                   </p>
                 </div>
               </Card>
@@ -118,9 +118,16 @@ export default function About() {
                 </div>
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black">Objectives</h3>
-                  <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
-                    To establish sustainable mentorship networks, create innovative learning platforms, facilitate cross-border collaboration, and develop measurable impact frameworks that advance African youth leadership and continental integration.
-                  </p>
+                  <div className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                    <ul className="space-y-2 text-left">
+                      <li>• Network and Collaborations</li>
+                      <li>• Academic and Intellectual Excellence</li>
+                      <li>• Professional and Corporate Readiness</li>
+                      <li>• Strategic Industry Engagement and Partnerships</li>
+                      <li>• Community and Continental Development</li>
+                      <li>• African Unity and Development</li>
+                    </ul>
+                  </div>
                 </div>
               </Card>
             </div>

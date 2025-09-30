@@ -89,7 +89,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.8 }}
                 >
-                  Empowering African youth through strategic programs, mentorship, and sustainable development initiatives across all 54 nations.
+                  To empower the youth to rise beyond limitations and lead lives of meaning, influence, and legacy.
                 </motion.p>
               </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
                           54 African Nations
                         </h3>
                         <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed px-1 sm:px-2 font-mono font-['Inter']">
-                          United in our mission to empower youth across every corner of the continent. 
+                          The Ascend Network welcomes students who are passionate about personal growth, leadership, innovation, and making a positive impact in their communities and on the continent.
                         </p>
                       </div>
                       

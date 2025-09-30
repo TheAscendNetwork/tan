@@ -117,9 +117,7 @@ export default function Contact() {
                 <FiMapPin size={20} color="#059669" aria-hidden="true" />
                  Headquarters: Accra, Ghana
               </p>
-              <p className="text-gray-600 mt-3">
-                Regional Offices: Lagos, Nairobi, Cape Town, Cairo
-              </p>
+              
             </div>
 
             {/* Socials */}

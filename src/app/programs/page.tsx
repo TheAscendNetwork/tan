@@ -7,95 +7,95 @@ export default function Programs() {
   const programs = [
     {
       id: 1,
-      title: "Youth Leadership Accelerator",
+      title: "TAN InterVarsity Leadership Conference",
       description:
-        "A comprehensive 12-month program designed to develop the next generation of African leaders through intensive training, mentorship, and practical leadership experience.",
+        "A rotating annual conference bringing together student leaders from various African universities with the theme: 'Africa by Africans'.",
       features: [
-        "Monthly leadership workshops",
-        "One-on-one mentorship with industry leaders",
-        "Real-world project implementation",
-        "Pan-African networking opportunities",
-        "Leadership certification",
+        "Annual rotating conference across African universities",
+        "Student leadership development workshops",
+        "Pan-African networking sessions",
+        "Africa by Africans themed discussions",
+        "Cross-university collaboration projects",
       ],
       image: "/youthleader.jpg",
-      duration: "12 months",
-      participants: "100+ annually",
+      duration: "Annual",
+      participants: "500+ student leaders",
     },
     {
       id: 2,
-      title: "Innovation & Entrepreneurship Hub",
+      title: "TAN Talks",
       description:
-        "Supporting innovative solutions to African challenges through incubation programs, funding opportunities, and technology transfer initiatives.",
+        "Like TEDx but Africa-focused, inviting industry experts, entrepreneurs, academics, and activists to discuss real-world solutions, Pan-African innovation, and inspirational stories.",
       features: [
-        "Startup incubation and acceleration",
-        "Access to seed funding and investment",
-        "Technology transfer programs",
-        "Market research and validation support",
-        "IP protection and commercialization",
+        "Industry expert speaker sessions",
+        "Entrepreneur success stories",
+        "Academic research presentations",
+        "Pan-African innovation showcases",
+        "Real-world solution discussions",
       ],
       image: "/innovation.jpg",
-      duration: "6-18 months",
-      participants: "50+ startups annually",
+      duration: "Monthly",
+      participants: "1000+ per event",
     },
     {
       id: 3,
-      title: "Cross-Border Collaboration Network",
+      title: "TAN Skill-Up Series",
       description:
-        "Facilitating meaningful connections and partnerships between African youth across different countries, sectors, and disciplines.",
+        "Regular masterclasses and webinars covering essential professional and personal development skills for African youth.",
       features: [
-        "Virtual and physical networking events",
-        "Cross-country exchange programs",
-        "Collaborative project platforms",
-        "Cultural exchange initiatives",
-        "Professional mentorship matching",
+        "CV building and LinkedIn optimization",
+        "Public speaking skills development",
+        "Business writing and proposal creation",
+        "African history and global relations",
+        "Skills Development (Women in carpentry, shoemaking, and other skills)",
       ],
-      image: "/crossborder.jpg",
-      duration: "Ongoing",
-      participants: "1000+ active members",
+      image: "/SkillsDevelopment.jpg",
+      duration: "Weekly sessions",
+      participants: "2000+ learners",
     },
     {
       id: 4,
-      title: "Sustainable Development Initiative",
+      title: "TAN Community Builders Project",
       description:
-        "Promoting environmentally conscious and economically viable development projects that create lasting positive impact in African communities.",
+        "An initiative focused on regularly giving back to society through community development and service projects across Africa.",
       features: [
-        "Community development projects",
-        "Environmental conservation programs",
-        "Clean energy and technology solutions",
-        "Sustainable agriculture initiatives",
+        "Regular community service projects",
+        "Local impact initiatives",
+        "Volunteer coordination programs",
+        "Community needs assessment",
         "Social impact measurement",
       ],
       image: "/sustainable.jpg",
-      duration: "2-5 years per project",
-      participants: "25+ communities impacted",
+      duration: "Ongoing",
+      participants: "500+ volunteers",
     },
     {
       id: 5,
-      title: "Skills Development & Capacity Building",
+      title: "TAN Mentorship Network",
       description:
-        "Comprehensive training programs designed to develop technical, professional, and life skills that enable African youth to compete globally.",
+        "Pairing students with professionals across different industries in Africa, while encouraging peer mentorship between senior and junior students.",
       features: [
-        "Technical skills training (IT, Engineering, etc.)",
-        "Professional development workshops",
-        "Language and communication skills",
-        "Financial literacy and management",
-        "Digital literacy programs",
+        "Professional-student mentorship matching",
+        "Cross-industry mentor network",
+        "Peer mentorship programs",
+        "Senior-junior student connections",
+        "Career guidance and development",
       ],
-      image: "/SkillsDevelopment.jpg",
-      duration: "3-6 months per course",
-      participants: "500+ annually",
+      image: "/crossborder.jpg",
+      duration: "6-12 months",
+      participants: "1000+ mentorship pairs",
     },
     {
       id: 6,
-      title: "Knowledge Sharing Platform",
+      title: "TAN Industry Access Pathways",
       description:
-        "Creating digital and physical platforms for sharing best practices, research findings, and innovative solutions across the African continent.",
+        "A dynamic program connecting students with professionals in key economic sectors through immersion, collaboration, and networking opportunities.",
       features: [
-        "Digital knowledge repository",
-        "Research publication platform",
-        "Best practices documentation",
-        "Expert speaker series",
-        "Community of practice networks",
+        "Industry immersion days",
+        "Collaborative improvement dialogues",
+        "Internship and shadowing opportunities",
+        "Sector-focused networking forums",
+        "Professional pathway guidance",
       ],
       image: "/KnowledgeSharing.jpg",
       duration: "Ongoing",
@@ -129,14 +129,12 @@ export default function Programs() {
             {programs.map((program, index) => (
               <div
                 key={program.id}
-                className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+                  }`}
               >
                 <div
-                  className={`space-y-8 ${
-                    index % 2 === 1 ? "lg:col-start-2" : ""
-                  }`}
+                  className={`space-y-8 ${index % 2 === 1 ? "lg:col-start-2" : ""
+                    }`}
                 >
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
