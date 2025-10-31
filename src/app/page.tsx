@@ -18,6 +18,12 @@ const ImagesLoop = dynamic(() => import('@/components/ui/ImagesLoop'), {
   ssr: false
 });
 
+const NewsSection = dynamic(() => import('@/components/ui/NewsSection'), {
+  loading: () => <LoadingSkeleton type="news" />,
+  ssr: false
+});
+
+
 export default function Home() {
   const [containerHeight, setContainerHeight] = useState(600);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -52,7 +58,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="block text-[0.6rem] sm:text-xs md:text-sm font-medium tracking-wide text-emerald-700 max-w-3xs bg-emerald-50 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full ring-1 ring-emerald-500/10 shadow-sm mb-2 sm:mb-3 lg:mb-4 text-center lg:text-left"
+                    className="block text-[0.6rem] sm:text-xs md:text-sm font-medium tracking-wide text-emerald-700 max-w-3xs sm:max-w-xs md:max-w-sm lg:max-w-fit bg-emerald-50 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full ring-1 ring-emerald-500/10 shadow-sm mb-2 sm:mb-3 lg:mb-4 text-center lg:text-left"
                   >
                     Pan-African Youth Empowerment
                   </motion.span>
@@ -92,33 +98,14 @@ export default function Home() {
                   To empower the youth to rise beyond limitations and lead lives of meaning, influence, and legacy.
                 </motion.p>
               </div>
-
-              <motion.div 
-                className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
-              >
-                <Link 
-                  href="https://whatsapp.com/channel/0029VbB5XVLHgZWan9Mb4I2X" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-6 py-2 text-blue-700 rounded-lg hover:underline underline-offset-4 hover:text-blue-800 transition animate-pulse">
-                    Join The Network ⚓
-                  </button>
-                </Link>
-              </motion.div>
             </div>
 
-            {/* Right Column - Interactive Falling Text */}
+            {/* Right Column - Interactive Card */}
             <div className="relative lg:pt-2 mt-6 lg:mt-0">
               <div 
                 ref={containerRef}
                 className="relative w-full overflow-visible min-h-[300px]"
-                style={{ 
-                  height: `${Math.min(containerHeight * 0.7, 450)}px`
-                }}
+                style={{ height: `${Math.min(containerHeight * 0.7, 450)}px` }}
               >
                 <motion.div
                   key="info-card"
@@ -129,15 +116,14 @@ export default function Home() {
                   className="absolute inset-0 flex items-start justify-center p-4"
                 >
                   <div className="backdrop-blur-md rounded-xl lg:rounded-2xl max-w-xs sm:max-w-sm md:max-w-md text-center relative overflow-hidden">
-                    {/* Background decoration */}
                     <div className="absolute -top-3 -right-3 w-16 h-16 sm:w-20 sm:h-20 bg-emerald-500/10 rounded-full blur-2xl"></div>
                     <div className="absolute -bottom-3 -left-3 w-16 h-16 sm:w-20 sm:h-20 bg-rose-500/10 rounded-full blur-2xl"></div>
                     
                     <div className="relative space-y-2 sm:space-y-3 p-3 sm:p-4 lg:p-6">
                       <div className="space-y-1.5 sm:space-y-2">
-                         <div className="flex justify-center">
-                           <GiAfrica size={128} color="#059669" />
-                         </div>
+                        <div className="flex justify-center">
+                          <GiAfrica size={128} color="#059669" />
+                        </div>
                         <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 font-['Poppins']">
                           54 African Nations
                         </h3>
@@ -145,7 +131,6 @@ export default function Home() {
                           The Ascend Network welcomes students who are passionate about personal growth, leadership, innovation, and making a positive impact in their communities and on the continent.
                         </p>
                       </div>
-                      
                       <div className="flex flex-wrap gap-1 sm:gap-1.5 justify-center pt-1 sm:pt-2">
                         <span className="inline-flex items-center px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-xs font-medium bg-emerald-100 text-emerald-800">
                           Pan-African Impact
@@ -158,10 +143,6 @@ export default function Home() {
                   </div>
                 </motion.div>
               </div>
-              
-              {/* Background decoration - adjusted for better layering */}
-              <div className="absolute -top-4 -right-4 w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 bg-emerald-500/15 rounded-full blur-3xl -z-10"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 bg-rose-600/15 rounded-full blur-3xl -z-10"></div>
             </div>          
           </div>
         </div>
@@ -169,18 +150,24 @@ export default function Home() {
       
       {/* Component Sections with Systematic Spacing */}
       <div className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
-        <Suspense fallback={<LoadingSkeleton type="images" />}>
-          <div className="py-6 sm:py-8 md:py-12 lg:py-16">
-            <ImagesLoop />
-          </div>
-        </Suspense>
 
-        <Suspense fallback={<LoadingSkeleton type="expert" />}>
-          <div className="py-6 sm:py-8 md:py-12 lg:py-16">
-            <Expert />
-          </div>
-        </Suspense>
-      </div>
+  {/* Images */}
+  <Suspense fallback={<LoadingSkeleton type="images" />}>
+    <ImagesLoop />
+  </Suspense>
+
+  {/* 📰 News Section */}
+  <Suspense fallback={<LoadingSkeleton type="news" />}>
+    <NewsSection />
+  </Suspense>
+
+  {/* Experts */}
+  <Suspense fallback={<LoadingSkeleton type="expert" />}>
+    <Expert />
+  </Suspense>
+
+</div>
+
     </div>
   );
 }

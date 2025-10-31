@@ -6,6 +6,8 @@ import Tan2 from "../../../public/Tan2.jpg";
 import Tan3 from "../../../public/Tan3.jpg";
 import Tan4 from "../../../public/Tan.jpg";
 import Tan5 from "../../../public/TanM.jpg";
+import Link from "next/link";
+
 
 const ImagesLoop = () => {
   const [currentIndex, setCurrentIndex] = useState(3);
@@ -51,17 +53,20 @@ const ImagesLoop = () => {
             The Ascend Network 🌍
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            The Ascend Network is a platform dedicated to fostering meaningful
-            professional connections across the continent. With over a decade of
-            experience in building communities, we believe networking goes
-            beyond exchanging contacts — it’s about{" "}
-            <span className="font-semibold text-emerald-700">
-              collaboration, mentorship, and shared growth.
-            </span>
+            Welcomes students who are passionate about personal growth, leadership, innovation, and making a positive impact in their communities and on the continent
+            
           </p>
-          <button className="px-6 py-3 rounded-full bg-emerald-600 text-white font-semibold shadow-md hover:bg-emerald-700 hover:shadow-lg transition duration-300">
-            Join the Network
-          </button>
+          <Link 
+  href="https://discord.gg/DQrSBddd" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="px-6 py-3 rounded-full bg-emerald-600 text-white font-semibold shadow-md hover:bg-emerald-700 hover:shadow-lg transition duration-300">
+    Join the Network
+  </button>
+</Link>
+
+          
         </div>
       </div>
     </section>

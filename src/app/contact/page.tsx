@@ -1,173 +1,144 @@
 'use client';
 
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaDiscord } from 'react-icons/fa';
 import { FiMail, FiMapPin } from 'react-icons/fi';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-brand-blue-50">
+    <main className="bg-gradient-to-b from-white via-brand-green-50/30 to-brand-blue-50/40 text-gray-800">
+      
       {/* Hero Section */}
-      <section className="py-20 lg:py-28 bg-gradient-to-br from-brand-green-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-black">
-            Get In <span className="text-brand-green-500">Touch</span>
+      <section className="relative py-24 px-6 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/60 via-white to-transparent" />
+        <div className="relative z-10 max-w-5xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-brand-black leading-tight mb-6">
+            Let’s Build <span className="text-emerald-600">Africa’s Future</span> Together
           </h1>
-          <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Ready to join the movement transforming Africa? We&apos;d love to hear from you. 
-            Connect with us to learn more about how you can be part of TAN&apos;s mission.
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Whether you’re a student, mentor, or partner, this is your chance to shape the next
+            generation of visionary African leaders. Reach out — we’d love to connect.
           </p>
         </div>
       </section>
 
-      {/* TAN Conclusion */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900">Join the Movement</h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6 text-lg text-gray-600">
-              <h3 className="text-2xl font-bold text-gray-900">
-                The Future of Africa is in Our Hands
-              </h3>
-              <p>
-                The Ascend Network represents more than just a networking platform; 
-                it embodies the collective aspirations of a generation determined to 
-                rewrite Africa&apos;s narrative.
-              </p>
-              <p>
-                Through TAN, we are building bridges that connect talent to opportunity, 
-                passion to purpose, and dreams to reality.
-              </p>
-              <p>
-                Every member who joins TAN brings unique skills, perspectives, 
-                and energy to our collective mission.
-              </p>
-              <p>
-                The transformation of Africa begins with each of us taking ownership. 
-                Join us, and let&apos;s ascend together toward a brighter future.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-2xl shadow-md hover:shadow-xl transition-all bg-white">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Why Connect with TAN?</h3>
-              <ul className="space-y-6">
-                {[
-                  { title: "Pan-African Network", desc: "Connect with like-minded individuals across all 54 African countries" },
-                  { title: "Transformative Impact", desc: "Be part of initiatives that create measurable change in communities" },
-                  { title: "Personal Growth", desc: "Access mentorship, training, and leadership development opportunities" },
-                  { title: "Career Advancement", desc: "Discover opportunities, partnerships, and career development resources" }
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start space-x-3">
-                    <div className="w-6 h-6 flex-shrink-0 text-green-600">✔</div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">{item.title}</h4>
-                      <p className="text-gray-600">{item.desc}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Information */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">How to Reach Us</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Multiple ways to connect with our team across Africa
+      {/* Mission Section */}
+      <section className="py-16 bg-white border-t border-gray-100 -mt-10">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Left Side */}
+          <div className="space-y-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              The Future Belongs to Those Who <span className="text-emerald-600">Take Initiative</span>
+            </h2>
+            <p className="text-lg text-gray-600">
+              At <strong>The Ascend Network</strong>, we believe in empowering Africa’s youth through mentorship,
+              leadership development, and global collaboration. Your voice and actions matter — together,
+              we can redefine what’s possible for our continent.
             </p>
+            <a
+              href="https://discord.gg/DQrSBddd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-emerald-600 text-white font-semibold shadow-lg hover:bg-emerald-700 hover:shadow-emerald-200 transition-transform transform hover:-translate-y-0.5 duration-300"
+            >
+              Join the Movement
+            </a>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Email */}
-            <div className="p-8 rounded-2xl shadow hover:shadow-lg transition-all bg-white">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Email Us</h3>
-              <div className="space-y-5">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <FiMail size={20} color="#059669" aria-hidden="true" />
-                    <span>General Inquiries:</span>
+          {/* Right Side */}
+          <div className="relative bg-gradient-to-br from-emerald-50 to-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all">
+            <div className="absolute top-0 left-0 w-32 h-32 bg-emerald-200/40 blur-3xl rounded-full" />
+            <h3 className="relative text-2xl font-semibold mb-8 text-gray-900">Why Connect with TAN?</h3>
+            <ul className="relative space-y-6 text-gray-700">
+              {[
+                { title: "Pan-African Network", desc: "Engage with change-makers and innovators from every African nation." },
+                { title: "Impact-Driven Projects", desc: "Collaborate on initiatives that create measurable social transformation." },
+                { title: "Mentorship & Leadership", desc: "Access guidance from influential leaders shaping Africa’s industries." },
+                { title: "Career Acceleration", desc: "Find exclusive opportunities to grow, serve, and lead." }
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <div className="w-5 h-5 flex items-center justify-center bg-emerald-100 text-emerald-600 rounded-full mt-1">
+                    ✓
                   </div>
-                  <a href="mailto:info@tan.africa" className="text-green-600 font-medium hover:underline break-all">
-                    info@tan.africa
-                  </a>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <FiMail size={20} color="#059669" aria-hidden="true" />
-                    <span>Partnership Opportunities:</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">{item.title}</h4>
+                    <p className="text-gray-600">{item.desc}</p>
                   </div>
-                  <a href="mailto:partnerships@tan.africa" className="text-green-600 font-medium hover:underline break-all">
-                    partnerships@tan.africa
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Locations */}
-            <div className="p-8 rounded-2xl shadow hover:shadow-lg transition-all bg-white">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Our Reach</h3>
-              <p className="flex items-center gap-2 font-medium text-gray-900">
-                <FiMapPin size={20} color="#059669" aria-hidden="true" />
-                 Headquarters: Accra, Ghana
-              </p>
-              
-            </div>
-
-            {/* Socials */}
-            <div className="p-8 text-center rounded-2xl shadow hover:shadow-lg transition-all bg-white">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Follow Us</h3>
-              <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="group inline-flex items-center gap-2.5 rounded-full px-4 py-2.5 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 shadow-sm ring-1 ring-blue-100 hover:ring-blue-200 hover:shadow-md hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
-                >
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-blue-600 text-white shadow-sm">
-                    <FaLinkedin size={14} />
-                  </span>
-                  <span className="font-medium">LinkedIn</span>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/the.ascendnetwork?igsh=bXllNzN5MG11cW9j&utm_source=qr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="group inline-flex items-center gap-2.5 rounded-full px-4 py-2.5 bg-gradient-to-r from-pink-50 to-rose-50 text-pink-600 shadow-sm ring-1 ring-pink-100 hover:ring-pink-200 hover:shadow-md hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-300"
-                >
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-white text-pink-600 border border-pink-200 shadow-sm">
-                    <FaInstagram size={14} />
-                  </span>
-                  <span className="font-medium">Instagram</span>
-                </a>
-
-                <a
-                  href="https://whatsapp.com/channel/0029VbB5XVLHgZWan9Mb4I2X"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp"
-                  className="group inline-flex items-center gap-2.5 rounded-full px-4 py-2.5 bg-gradient-to-r from-green-50 to-green-100 text-green-700 shadow-sm ring-1 ring-green-100 hover:ring-green-200 hover:shadow-md hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-300"
-                >
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-green-600 text-white shadow-sm">
-                    <FaWhatsapp size={14} />
-                  </span>
-                  <span className="font-medium">WhatsApp</span>
-                </a>
-              </div>
-            </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Contact + Social Section */}
+      <section className="py-20 bg-gradient-to-br from-emerald-50 to-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-6 text-center space-y-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            Let’s Connect Beyond Borders 
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Connect with us directly — we’re always open to partnerships, collaborations, and meaningful conversations that shape Africa’s future.
+          </p>
+
+          {/* Contact Info */}
+          <div className="flex flex-wrap justify-center gap-10 text-gray-700 text-lg">
+            <a
+              href="mailto: THEASCENDN@GMAIL"
+              className="flex items-center gap-2 hover:text-emerald-600 transition"
+            >
+              <FiMail className="text-emerald-600" size={22} />
+               THEASCENDN@GMAIL
+            </a>
+            <a
+              href="https://www.google.com/maps/place/Accra,+Ghana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-emerald-600 transition"
+            >
+              <FiMapPin className="text-emerald-600" size={22} />
+              Accra, Ghana
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex flex-wrap justify-center gap-6 mt-8">
+            <a
+              href="https://www.linkedin.com/company/theascendnetwork"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-blue-50 text-blue-700 rounded-full font-medium hover:bg-blue-100 transition"
+            >
+              <FaLinkedin className="text-blue-600" size={20} /> LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/the.ascendnetwork?igsh=bXllNzN5MG11cW9j&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-rose-50 text-pink-700 rounded-full font-medium hover:bg-rose-100 transition"
+            >
+              <FaInstagram className="text-pink-600" size={20} /> Instagram
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029VbB5XVLHgZWan9Mb4I2X"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-green-50 text-green-700 rounded-full font-medium hover:bg-green-100 transition"
+    >
+  <FaWhatsapp className="text-green-600" size={20} /> WhatsApp
+</a>
+            <a
+              href="https://discord.gg/DQrSBddd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-indigo-50 text-indigo-700 rounded-full font-medium hover:bg-green-100 transition"
+            >
+              <FaDiscord className="text-indigo-600" size={20} />Discord
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
-

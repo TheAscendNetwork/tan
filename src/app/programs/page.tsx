@@ -1,252 +1,131 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 
 export default function Programs() {
-  const programs = [
-    {
-      id: 1,
-      title: "TAN InterVarsity Leadership Conference",
-      description:
-        "A rotating annual conference bringing together student leaders from various African universities with the theme: 'Africa by Africans'.",
-      features: [
-        "Annual rotating conference across African universities",
-        "Student leadership development workshops",
-        "Pan-African networking sessions",
-        "Africa by Africans themed discussions",
-        "Cross-university collaboration projects",
-      ],
-      image: "/youthleader.jpg",
-      duration: "Annual",
-      participants: "500+ student leaders",
-    },
-    {
-      id: 2,
-      title: "TAN Talks",
-      description:
-        "Like TEDx but Africa-focused, inviting industry experts, entrepreneurs, academics, and activists to discuss real-world solutions, Pan-African innovation, and inspirational stories.",
-      features: [
-        "Industry expert speaker sessions",
-        "Entrepreneur success stories",
-        "Academic research presentations",
-        "Pan-African innovation showcases",
-        "Real-world solution discussions",
-      ],
-      image: "/innovation.jpg",
-      duration: "Monthly",
-      participants: "1000+ per event",
-    },
-    {
-      id: 3,
-      title: "TAN Skill-Up Series",
-      description:
-        "Regular masterclasses and webinars covering essential professional and personal development skills for African youth.",
-      features: [
-        "CV building and LinkedIn optimization",
-        "Public speaking skills development",
-        "Business writing and proposal creation",
-        "African history and global relations",
-        "Skills Development (Women in carpentry, shoemaking, and other skills)",
-      ],
-      image: "/SkillsDevelopment.jpg",
-      duration: "Weekly sessions",
-      participants: "2000+ learners",
-    },
-    {
-      id: 4,
-      title: "TAN Community Builders Project",
-      description:
-        "An initiative focused on regularly giving back to society through community development and service projects across Africa.",
-      features: [
-        "Regular community service projects",
-        "Local impact initiatives",
-        "Volunteer coordination programs",
-        "Community needs assessment",
-        "Social impact measurement",
-      ],
-      image: "/sustainable.jpg",
-      duration: "Ongoing",
-      participants: "500+ volunteers",
-    },
-    {
-      id: 5,
-      title: "TAN Mentorship Network",
-      description:
-        "Pairing students with professionals across different industries in Africa, while encouraging peer mentorship between senior and junior students.",
-      features: [
-        "Professional-student mentorship matching",
-        "Cross-industry mentor network",
-        "Peer mentorship programs",
-        "Senior-junior student connections",
-        "Career guidance and development",
-      ],
-      image: "/crossborder.jpg",
-      duration: "6-12 months",
-      participants: "1000+ mentorship pairs",
-    },
-    {
-      id: 6,
-      title: "TAN Industry Access Pathways",
-      description:
-        "A dynamic program connecting students with professionals in key economic sectors through immersion, collaboration, and networking opportunities.",
-      features: [
-        "Industry immersion days",
-        "Collaborative improvement dialogues",
-        "Internship and shadowing opportunities",
-        "Sector-focused networking forums",
-        "Professional pathway guidance",
-      ],
-      image: "/KnowledgeSharing.jpg",
-      duration: "Ongoing",
-      participants: "Unlimited access",
-    },
-  ];
-
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="py-20 lg:py-28 bg-gradient-to-br from-brand-blue-100 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-8">
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-10 sm:space-y-12 lg:space-y-16">
+          
+          {/* Header */}
+          <div className="text-center space-y-6 sm:space-y-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
               Our Strategic Programs
-            </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              TAN&apos;s comprehensive suite of programs is designed to empower
-              African youth through targeted interventions that address key
-              development challenges while building sustainable capacity for
-              long-term impact.
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-slate-500 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+              TAN&apos;s objectives are designed to create measurable impact across multiple dimensions of African development.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Programs Grid */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-24">
-            {programs.map((program, index) => (
-              <div
-                key={program.id}
-                className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-                  }`}
-              >
-                <div
-                  className={`space-y-8 ${index % 2 === 1 ? "lg:col-start-2" : ""
-                    }`}
-                >
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-brand-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-brand-green-600 font-bold text-lg">
-                          {program.id}
-                        </span>
-                      </div>
-                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                        {program.title}
-                      </h2>
-                    </div>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      {program.description}
-                    </p>
-                  </div>
+          {/* Programs Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16">
 
-                  <div className="grid md:grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-3">
-                      <svg
-                        className="w-5 h-5 text-brand-green-600 flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      <span className="text-gray-600">
-                        Duration: {program.duration}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <svg
-                        className="w-5 h-5 text-brand-green-600 flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                        />
-                      </svg>
-                      <span className="text-gray-600">
-                        {program.participants}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      Key Features:
-                    </h3>
-                    <ul className="space-y-3">
-                      {program.features.map((feature, featureIndex) => (
-                        <li
-                          key={featureIndex}
-                          className="flex items-start gap-3"
-                        >
-                          <div className="w-5 h-5 bg-brand-green-100 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                            <svg
-                              className="w-3 h-3 text-brand-green-600"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                          <span className="text-gray-600 leading-relaxed">
-                            {feature}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="pt-2">
-                    <button className="px-6 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-
-                <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
-                  <Image
-                    src={program.image}
-                    alt={`${program.title} - TAN program illustration`}
-                    width={500}
-                    height={400}
-                    className="rounded-2xl shadow-2xl"
-                    unoptimized
-                  />
-                </div>
+            {/* Program 1 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-emerald-600 font-bold text-xs sm:text-sm">1</span>
               </div>
-            ))}
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN InterVarsity Leadership Conference
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  A rotating annual conference bringing together student leaders from various African universities. Themes: “Africa by Africans”
+                </p>
+              </div>
+            </div>
+
+            {/* Program 2 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-emerald-600 font-bold text-xs sm:text-sm">2</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN Talks (Like TEDx but Africa-focused)
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  Invite industry experts, entrepreneurs, academics, and activists to discuss matters of the future, focusing on real-world solutions, Pan-African innovation, and inspirational stories.
+                </p>
+              </div>
+            </div>
+
+            {/* Program 3 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-emerald-600 font-bold text-xs sm:text-sm">3</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN Skill-Up Series
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  Regular masterclasses and webinars on:
+                </p>
+                <ul className="list-disc list-inside text-sm sm:text-base text-slate-500 leading-relaxed space-y-1">
+                  <li>CV building, LinkedIn optimization</li>
+                  <li>Public speaking skills</li>
+                  <li>Business writing, proposal creation</li>
+                  <li>African history and global relations</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Program 4 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-rose-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-rose-600 font-bold text-xs sm:text-sm">4</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN Community Builders Project
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  An act of regularly giving back to society.
+                </p>
+              </div>
+            </div>
+
+            {/* Program 5 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-rose-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-rose-600 font-bold text-xs sm:text-sm">5</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN Mentorship Network
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  Pair students with professionals across different industries in Africa. It would also encourage peer mentorship: senior students mentoring juniors across Africa.
+                </p>
+              </div>
+            </div>
+
+            {/* Program 6 */}
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-rose-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-rose-600 font-bold text-xs sm:text-sm">6</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  TAN Industry Access Pathways
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  A dynamic program to connect students with professionals in key economic sectors through:
+                </p>
+                <ul className="list-disc list-inside text-sm sm:text-base text-slate-500 leading-relaxed space-y-1">
+                  <li>Industry immersion days</li>
+                  <li>Collaborative improvement dialogues</li>
+                  <li>Internship and shadowing opportunities</li>
+                  <li>Sector-focused networking forums</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

@@ -117,14 +117,21 @@ export default function Membership() {
               
               <div className="space-y-4">
                 <Link 
+                  href="https://discord.gg/DQrSBddd" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors"
+                >
+                  Join Our Discord
+                </Link>
+                <Link 
                   href="https://whatsapp.com/channel/0029VbB5XVLHgZWan9Mb4I2X" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors"
                 >
-                  Join Our WhatsApp Channel
+                  Join Whatsapp
                 </Link>
-                
                 <Link 
                   href="/contact"
                   className="block w-full bg-slate-100 hover:bg-slate-200 text-gray-900 font-semibold py-3 px-6 rounded-lg text-center transition-colors"
@@ -152,7 +159,7 @@ export default function Membership() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
-              href="https://whatsapp.com/channel/0029VbB5XVLHgZWan9Mb4I2X" 
+              href="https://discord.gg/DQrSBddd" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-emerald-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors"

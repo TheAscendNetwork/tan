@@ -73,16 +73,16 @@ const Footer: React.FC = () => {
               <div className="space-y-3">
                 <p className="font-medium text-white">Email</p>
                 <a 
-                  href="mailto:info@tan.africa" 
+                  href="mailto:THEASCENDN@GMAIL" 
                   className="text-slate-300 hover:text-emerald-600 transition-colors duration-200 block"
                 >
-                  info@tan.africa
+                  THEASCENDN@GMAIL
                 </a>
               </div>
               
               <div className="space-y-3">
                 <p className="font-medium text-white">Location</p>
-                <p className="text-slate-300">Africa-wide Network</p>
+                <p className="text-slate-300">Accra,Ghana</p>
               </div>
 
               <div className="space-y-4">
@@ -99,13 +99,15 @@ const Footer: React.FC = () => {
                   </a>
                   <a
                     href="#"
-                    className="text-slate-400 hover:text-emerald-600 transition-colors duration-200 p-2 rounded-lg hover:bg-slate-800"
-                    aria-label="Twitter"
+                    className="text-slate-400 hover:text-indigo-500 transition-colors duration-200 p-2 rounded-lg hover:bg-slate-800"
+                    aria-label="Discord"
                   >
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                    </svg>
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.078.037c-.211.375-.444.864-.608 1.249-1.84-.276-3.68-.276-5.486 0-.164-.398-.398-.874-.61-1.249a.077.077 0 00-.078-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.027C1.205 9.04.79 13.58 1.12 18.061a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.018.078.078 0 00.084-.027c.462-.63.875-1.294 1.226-1.993a.076.076 0 00-.041-.105c-.652-.246-1.274-.546-1.873-.892a.077.077 0 01-.008-.127c.125-.093.25-.188.368-.287a.074.074 0 01.078-.01c3.927 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.009c.119.1.244.195.369.288a.077.077 0 01-.007.127 12.298 12.298 0 01-1.875.891.076.076 0 00-.04.106c.36.698.773 1.362 1.225 1.993a.078.078 0 00.084.027 19.876 19.876 0 005.995-3.018.082.082 0 00.031-.056c.5-6.177-.838-10.68-3.548-13.665a.06.06 0 00-.03-.029zM8.02 15.331c-1.182 0-2.155-1.085-2.155-2.419 0-1.333.955-2.419 2.155-2.419 1.21 0 2.174 1.096 2.155 2.419 0 1.334-.955 2.419-2.155 2.419zm7.975 0c-1.182 0-2.155-1.085-2.155-2.419 0-1.333.955-2.419 2.155-2.419 1.21 0 2.174 1.096 2.155 2.419 0 1.334-.945 2.419-2.155 2.419z" />
+                  </svg>
                   </a>
+                  
+                  
                   <a
                     href="#"
                     className="text-slate-400 hover:text-rose-600 transition-colors duration-200 p-2 rounded-lg hover:bg-slate-800"
