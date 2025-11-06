@@ -11,7 +11,7 @@ const Card = dynamic(() => import('../../components/Card'), {
 });
 
 // Since this is a client component, we can't export metadata directly
-// The metadata would be handled in layout.tsx or a separate metadata file
+// The metadata would be handled in layout.tsx or a  separate metadata file
 
 export default function About() {
   return (
