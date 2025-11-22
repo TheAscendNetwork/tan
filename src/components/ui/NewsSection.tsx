@@ -20,7 +20,7 @@ const NewsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Latest News & Events
+            News 
           </h2>
           <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full mt-3"></div>
         </div>

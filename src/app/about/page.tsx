@@ -35,14 +35,12 @@ export default function About() {
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black">Executive Summary</h2>
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
                 <p>
-                  The Network will serve as a leadership and empowerment hub for students committed to personal growth, academic excellence, community service, and purposeful collaboration. Beyond academic and leadership development, TAN aims to create a generational movement of students and youth who are prepared to make meaningful contributions to Africa’s long-term growth and transformation
+                  TAN is a student network that focuses on leadership, personal growth, academic excellence, and community service. Its goal is to build a strong generation of young Africans who are ready to contribute to the continent’s development.
                 </p>
                 <p>
-                  By fostering strategic partnerships across key industries such as real estate, natural resource extraction, finance, engineering, agro-processing, technology, health, education, manufacturing, logistics, tourism, and green energy, TAN will provide direct access for its members to engage with leaders and innovators shaping Africa’s future.
+                  To achieve this, TAN will partner with key industries such as real estate, finance, engineering, technology, agriculture, health, education, manufacturing, tourism, and green energy. Through these partnerships, members will gain direct access to industry leaders, learn from them, and work together on real solutions that can help Africa grow.
                 </p>
-                <p>
-                  This platform will allow students not only to learn from these sectors but also to co-create sustainable solutions alongside industry professionals
-                </p>
+                
               </div>
             </div>
             <div className="order-first lg:order-last">
@@ -200,6 +198,20 @@ export default function About() {
 
             <div className="flex items-start space-x-3 sm:space-x-4">
               <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                <span className="text-emerald-600 font-bold text-[9px] sm:text-[10px] leading-none">SDG 16</span>
+              </div>
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  Promote Just, Peaceful and Inclusive Societies
+                </h3>
+                <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+                  Committed to promoting peace,fairness, and strong, transparent governance in all our operations.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
                 <span className="text-emerald-600 font-bold text-[9px] sm:text-[10px] leading-none">SDG 17</span>
               </div>
               <div className="space-y-1 sm:space-y-2">
@@ -211,7 +223,10 @@ export default function About() {
                 </p>
               
               </div>
+              
             </div>
+
+            
 
 
           </div>

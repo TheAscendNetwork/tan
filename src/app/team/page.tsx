@@ -1,22 +1,71 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import TanCeo from '../../../public/TanCeo.jpg';
+import React from "react";
+import Image from "next/image";
+import PatronImage from "../../../public/Patron.jpg"; // replace with actual
+import TanCeo from "../../../public/TanCeo.jpg"; // founder
+import Sitso from "../../../public/Sitso.jpeg"; // Sitso
+import David from "../../../public/David.jpg"; // David
 
 export default function Team() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Hero Section */}
-      <section className="py-20 lg:py-28 bg-gradient-to-br from-emerald-50 to-white">
+      <section className="py-20 lg:py-28 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
               Meet Our <span className="text-emerald-600">Team</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              The visionary leaders and dedicated team members driving The Ascend Network&rsquo;s mission to empower African youth across the continent.
+              The visionary leaders and dedicated team members driving The
+              Ascend Network’s mission to empower African youth across the
+              continent.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-12 lg:py-15 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-x-8 lg:gap-x-12 items-center">
+            <div>
+              <Image
+                src={PatronImage}
+                alt="Madam Aba Amoa, Patron of The Ascend Network"
+                width={300}
+                height={300}
+                className="rounded-2xl shadow-2xl"
+                unoptimized
+              />
+            </div>
+            <div>
+              <div>
+                <div>
+                  <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                    Madam Aba Amoa
+                  </h2>
+                  <p className="text-xl font-semibold text-emerald-600">
+                    Patron
+                  </p>
+                </div>
+                <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+                  <p>
+                    With over 18 years of experience in real estate and
+                    facilities management, our Patron is the CEO of BDZ
+                    Properties Limited in Ghana. A certified Valuation and
+                    Estate Surveyor and member of the Ghana Institution of
+                    Surveyors (MGhIS), she specializes in sustainable and green
+                    building solutions, and is also a member of the
+                    International Facility Management Association (IFMA).
+                    Renowned as a leader, mentor, and trainer, she is deeply
+                    committed to creating positive impact in communities and
+                    empowering individuals through her work and guidance.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -37,24 +86,38 @@ export default function Team() {
                 </div>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
-                    Kwabena Sarfo Kantanka is the founder of The Ascend Network, a pan-African student initiative focused on leadership, innovation, and continental transformation. Kwabena is driven by a deep belief that Africa&rsquo;s future lies in the hands of its youth—and that students, when empowered with the right tools, intentional networking, and a supportive community, can become architects of lasting change.
-                  </p>
-                  <p>
-                    With a strong passion for personal growth, strategic collaboration, and purposeful impact, Kwabena created TAN to bridge the gap between academic life and real-world leadership. His goal is to build a vibrant network of students across Africa who are ready to rise, connect, and co-create solutions for the continent&rsquo;s most pressing challenges.
-                  </p>
-                  <p>
-                    Through TAN, Kwabena continues to champion a new generation of thinkers and doers—students who aspire not just to succeed, but to lead with meaning, influence, and legacy.
+                    Kwabena Sarfo Kantanka is the founder of The Ascend Network,
+                    a pan African student initiative that promotes leadership,
+                    innovation, and positive change. He believes Africa’s
+                    progress depends on empowering young people with the skills,
+                    connections, and support they need to lead effectively.
+                    Driven by a passion for personal growth and collaboration,
+                    he created TAN to connect academic learning with real
+                    leadership opportunities and to build a strong community of
+                    students across the continent. Through this work, he
+                    continues to inspire a new generation of young people who
+                    aim to create meaningful impact and lasting progress for
+                    Africa.
                   </p>
                 </div>
               </div>
+
+              {/* Quote */}
+              <div className="mt-8 text-center">
+                <p className="text-xl lg:text-2xl font-serif italic text-gray-700">
+                  &quot;The future belongs to those who prepare for it
+                  today&quot;
+                </p>
+              </div>
             </div>
+
             <div className="order-first lg:order-last">
               <Image
                 src={TanCeo}
                 alt="Kwabena Sarfo Kantanka, Founder and Lead of The Ascend Network"
-                width={500}
-                height={600}
-                className="rounded-2xl shadow-2xl w-full h-auto"
+                width={300}
+                height={300}
+                className="rounded-2xl shadow-2xl"
                 unoptimized
               />
             </div>
@@ -62,26 +125,59 @@ export default function Team() {
         </div>
       </section>
 
-      {/* Co-founders Section - Placeholder for future content */}
-      <section className="py-20 lg:py-28 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-           Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Meet the dedicated leaders working alongside our founder to drive TAN&rsquo;s mission across Africa.
-            </p>
-          </div>
-          
-          {/* Placeholder for co-founders */}
-          <div className="mt-16 text-center">
-            <div className="bg-white rounded-2xl shadow-lg p-12">
-              <p className="text-lg text-gray-600">
-                Co-founder profiles coming soon. Stay tuned to meet the amazing leaders who are part of The Ascend Network&rsquo;s journey.
-              </p>
+      {/* Leadership Team / Co-founders Section */}
+      <section className="py-20 bg-white">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900">Our Team</h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Meet the dedicated team members supporting the vision of The Ascend
+            Network.
+          </p>
+        </div>
+
+        {/* Team Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center">
+          {/* Member 1 */}
+          <div className="flex flex-col items-center max-w-xs w-full">
+            {/* Image card */}
+            <div className="w-full aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={Sitso}
+                alt="Sitso, Co-founder"
+                className="w-full h-full object-cover"
+                unoptimized
+              />
+            </div>
+            {/* Separate caption */}
+            <div className="mt-4 text-center">
+              <h3 className="text-xl font-semibold text-gray-900">
+                Dennis Sitsofe Kwame Lagble
+              </h3>
+              <p className="text-gray-600">Co-founder</p>
             </div>
           </div>
+
+          {/* Member 2 */}
+          <div className="flex flex-col items-center max-w-xs w-full">
+            <div className="w-full aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={David}
+                alt="David, Co-founder"
+                className="w-full h-full object-cover"
+                unoptimized
+              />
+            </div>
+            <div className="mt-4 text-center">
+              <h3 className="text-xl font-semibold text-gray-900">
+                {" "}
+                Mgbonyebi David Mudiagakoghene Ovie
+              </h3>
+              <p className="text-gray-600">Co-founder</p>
+            </div>
+          </div>
+
+          {/* Add more members here in the same pattern */}
         </div>
       </section>
     </div>
